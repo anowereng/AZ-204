@@ -1,3 +1,5 @@
+[Explore Azure Blob storage]{.underline}
+
 Azure Blob Storage is Microsoft\'s cloud-based object storage solution,
 optimized for handling vast amounts of unstructured data such as text
 and binary content. It is designed for various applications, including
@@ -142,13 +144,13 @@ analysis
 
 **Comparison of Blob Types**
 
-| **Feature**         | **Block Blob**                 | **Append Blob**               | **Page Blob**             |
-|---------------------|--------------------------------|-------------------------------|---------------------------|
-| **Optimization**    | Large unstructured data        | Append-only operations        | Random read/write access  |
-| **Block/Page Size** | 64 KB - 100 MB (default 4 MiB) | 64 KB - 100 MB                | 512-byte pages            |
-| **Maximum Size**    | Up to 190.7 TiB                | Same as block blob            | 8 TiB                     |
-| **Use Case**        | Media, backups, documents      | Logs, telemetry, audit trails | Virtual disks, legacy VMs |
-| **Write Behavior**  | Overwrite supported            | Append-only                   | Random access             |
+| **Feature**         | **Block Blob**                 | **Append Blob**                                              | **Page Blob**             |
+|---------------------|--------------------------------|--------------------------------------------------------------|---------------------------|
+| **Optimization**    | Large unstructured data        | Append-only operations                                       | Random read/write access  |
+| **Block/Page Size** | 64 KB - 100 MB (default 4 MiB) | 64 KB - 100 MB                                               | 512-byte pages            |
+| **Maximum Size**    | Up to 190.7 TiB                | Same as block blob                                           | 8 TiB                     |
+| **Use Case**        | Media, backups, documents      | logging data from virtual machines., telemetry, audit trails | Virtual disks, legacy VMs |
+| **Write Behavior**  | Overwrite supported            | Append-only                                                  | Random access             |
 
 **Key Takeaways**
 
@@ -159,7 +161,7 @@ analysis
 - Use **page blobs** for scenarios like Azure VM disks requiring random
   read/write access.
 
-Blob storage tier:
+**Blob storage tier:**
 
 Hot: Optimized for data that is accessed frequently; it has higher
 storage costs but lower access costs.
@@ -172,38 +174,9 @@ Archive: Ideal for data that can tolerate several hours of retrieval
 latency and is stored for a minimum of 180 days; it provides the lowest
 storage costs with higher access costs.
 
-**Key Points and Notes: Azure Blob Storage Automation and Access
-Management**
-
-**Automation with Azure Blob Lifecycle Management**
-
-**Lifecycle Management** policies automate the movement of blobs between
-tiers based on rules.
-
-**Steps to configure:**
-
-1.  **Define Rules**: Create rules to move blobs to cooler tiers based
-    on conditions such as age or last access time.
-
-2.  **Action Options**:
-
-    - Move to Cool Tier
-
-    - Move to Archive Tier
-
-    - Delete blobs
-
-3.  **Conditions**:
-
-    - Blob age (e.g., move to cool tier if not modified for 30 days).
-
-    - Blob type (block blob, append blob, etc.).
-
-    - Blob prefix or tag filters.
-
 **Storage Access**
 
-- **Public vs. Private Access**:
+- **Public vs. Private Access**:
 
   - **Public Access**:
 
@@ -227,46 +200,3 @@ tiers based on rules.
 
   - Folder structure is virtual unless using hierarchical namespaces
     (e.g., Data Lake).
-
-**Shared Access Signature (SAS) Tokens**
-
-- **Purpose**:  
-  Allows controlled access to blobs in private containers without
-  sharing account keys.
-
-- **Types of SAS Tokens**:
-
-  1.  **Individual (Ad Hoc) Tokens**:
-
-      - Issued for specific blobs or containers.
-
-      - Permissions: Read, write, delete, etc.
-
-      - Limitations:
-
-        - Cannot manage after creation.
-
-        - To revoke access, regenerate the account key.
-
-  2.  **Policy-Issued Tokens**:
-
-      - Linked to a shared access policy.
-
-      - Benefits:
-
-        - Tokens can be rescinded by invalidating the policy.
-
-        - Safer for managing access and business continuity.
-
-      - Policies share lifecycle and access permissions across all
-        tokens issued under them.
-
-- **Token Customization**:
-
-  - Permissions: Read, write, delete, etc.
-
-  - Expiration: Set duration for validity.
-
-  - IP Filters: Restrict access to specific IP ranges.
-
-  - Protocols: Specify HTTP/HTTPS-only access.
