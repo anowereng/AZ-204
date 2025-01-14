@@ -7,22 +7,9 @@ serving images or documents directly to browsers, streaming media,
 writing log files, and storing data for backup, disaster recovery, and
 analysis
 
-**Key Components:**
+### Types of Storage Accounts:**
 
--   **Storage Account**: The top-level container that provides a unique
-    namespace for your Azure Storage data, accessible globally over HTTP
-    or HTTPS.
-
--   **Containers**: Within a storage account, containers organize blobs,
-    similar to directories in a file system.
-
--   **Blobs**: The individual pieces of data stored, which can be block
-    blobs, append blobs, or page blobs, each optimized for different
-    storage scenarios.
-
-**Types of Storage Accounts:**
-
--   **Standard General-Purpose v2**: Supports Blob Storage, Queue
+-   ### Standard General-Purpose v2: Supports Blob Storage, Queue
     Storage, Table Storage, and Azure Files with various redundancy
     options like LRS, GRS, ZRS, and GZRS.
 
