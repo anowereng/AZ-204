@@ -1,4 +1,4 @@
-#[Explore Azure Blob storage]
+*[Explore Azure Blob storage]*
 
 Azure Blob Storage is Microsoft\'s cloud-based object storage solution,
 optimized for handling vast amounts of unstructured data such as text
