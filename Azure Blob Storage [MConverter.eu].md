@@ -9,7 +9,7 @@ analysis
 
 ### Types of Storage Accounts:**
 
--   ### Standard General-Purpose v2: Supports Blob Storage, Queue
+-   **Standard General-Purpose v2**: Supports Blob Storage, Queue
     Storage, Table Storage, and Azure Files with various redundancy
     options like LRS, GRS, ZRS, and GZRS.
 
