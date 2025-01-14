@@ -1,4 +1,4 @@
-Explore Azure Blob storage
+## <em> Explore Azure Blob storage </em>
 
 Azure Blob Storage is Microsoft's cloud-based object storage solution, optimized for handling vast amounts of unstructured data such as text and binary content. It is designed for various applications, including serving images or documents directly to browsers, streaming media, writing log files, and storing data for backup, disaster recovery, and analysis
 
@@ -77,6 +77,7 @@ Azure Blob Storage is Microsoft's cloud-based object storage solution, optimized
 |**Cost**|Least Expensive|More Expensive|Moderate|Most Expensive|
 |**Best Use Case**|Cost-sensitive, Non-critical workloads|Disaster recovery, critical data|Zone failure resilience|Mission-critical with disaster recovery|
 ||||||
+
 **Comparison of Blob Types**
 
 |**Feature**|**Block Blob**|**Append Blob**|**Page Blob**|
@@ -93,7 +94,7 @@ Azure Blob Storage is Microsoft's cloud-based object storage solution, optimized
 - Use **append blobs** for log files and sequential writes.
 - Use **page blobs** for scenarios like Azure VM disks requiring random read/write access.
 
-**Blob storage tier:**
+### **Blob storage tier:**
 
 Hot: Optimized for data that is accessed frequently; it has higher storage costs but lower access costs.
 
