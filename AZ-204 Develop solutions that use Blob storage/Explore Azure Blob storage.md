@@ -134,7 +134,7 @@ Azure Blob Storage lifecycle management enables effective cost optimization and 
 
 - Apply rules to specific containers, blob prefixes, or use blob index tags for precise targeting.
 
-### Scenario: Managing Data Lifecycle
+### Example : Managing Data Lifecycle
 #### Frequent Access (Day 0–14):
 
 - Keep data in the Hot Tier to ensure optimal performance for high access frequency.
