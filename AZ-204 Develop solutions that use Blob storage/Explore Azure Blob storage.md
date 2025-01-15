@@ -116,3 +116,30 @@ Archive: Ideal for data that can tolerate several hours of retrieval latency and
   - Folder structure is virtual unless using hierarchical namespaces (e.g., Data Lake).
 
 
+### **Manage the data lifecycle:**
+Azure Blob Storage lifecycle management enables effective cost optimization and performance tuning by automating data transitions across storage tiers and deleting unused data. Here's how the lifecycle management policy aligns with your described scenario:
+
+### Lifecycle Management Capabilities:
+
+**Transition blobs across tiers based on access patterns:**
+
+- Automatically move data from Hot to Cool or Archive tiers as access frequency declines.
+- Transition back to Hot when data is accessed, ensuring performance.
+
+**Retire old data:**
+
+- Expire data at the end of its lifecycle by setting rules to delete blobs, snapshots, or versions.
+
+**Control with filters**
+
+- Apply rules to specific containers, blob prefixes, or use blob index tags for precise targeting.
+
+### Scenario: Managing Data Lifecycle
+#### Frequent Access (Day 0–14):
+
+- Keep data in the Hot Tier to ensure optimal performance for high access frequency.
+#### Occasional Access (Day 15–30):
+- Transition data to the Cool Tier where storage is cheaper, yet data can be accessed occasionally with slightly higher latency.
+#### Rarely Accessed Data (After Day 30):
+- Move data to the Archive Tier to minimize costs. Data retrieval from this tier is slower and incurs additional charges but is cost-efficient for rarely accessed data.
+
