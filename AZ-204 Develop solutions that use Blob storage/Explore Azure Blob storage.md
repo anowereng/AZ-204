@@ -102,7 +102,7 @@ Cool: Suitable for data that is infrequently accessed and stored for at least 30
 
 Archive: Ideal for data that can tolerate several hours of retrieval latency and is stored for a minimum of 180 days; it provides the lowest storage costs with higher access costs.
 
-**Storage Access**
+### **Storage Access**
 
 - **Public vs. Private Access**:
   - **Public Access**:
