@@ -1,0 +1,53 @@
+## Event grid file upload examples
+
+2025-02-09T14:29:59Z   [Information]   Executing 'Function1' (Reason='EventGrid trigger fired at 2025-02-09T14:29:59.4314891+00:00', Id=e8f05ed1-1419-403e-8fe2-b07a21b2bdcc)
+2025-02-09T14:29:59Z   [Information]   Event received!
+2025-02-09T14:29:59Z   [Information]   {
+  "topic": "/subscriptions/19575704-3a7b-4581-a38f-a6ac911b0b67/resourceGroups/az-learn-anower/providers/Microsoft.Storage/storageAccounts/samapan",
+  "subject": "/blobServices/default/containers/files/blobs/475103523_1158398602324441_5170344814017970935_n.jpg",
+  "eventType": "Microsoft.Storage.BlobCreated",
+  "id": "0a38ab70-501e-0052-4fff-7ac7fc06c2ae",
+  "data": {
+    "api": "PutBlob",
+    "clientRequestId": "a2fc52f9-716c-4ea1-88ff-0e4016ceb03a",
+    "requestId": "0a38ab70-501e-0052-4fff-7ac7fc000000",
+    "eTag": "0x8DD49163A837EDA",
+    "contentType": "image/jpeg",
+    "contentLength": 1175779,
+    "blobType": "BlockBlob",
+    "accessTier": "Default",
+    "url": "https://samapan.blob.core.windows.net/files/475103523_1158398602324441_5170344814017970935_n.jpg",
+    "sequencer": "0000000000000000000000000001DEB300000000003541a9",
+    "storageDiagnostics": {
+      "batchId": "c14d63d1-b006-0028-00ff-7adabc000000"
+    }
+  },
+  "dataVersion": "",
+  "metadataVersion": "1",
+  "eventTime": "2025-02-09T14:29:57.6282842Z"
+}2025-02-09T14:29:59Z   [Information]   Executing 'Function1' (Reason='EventGrid trigger fired at 2025-02-09T14:29:59.4314891+00:00', Id=e8f05ed1-1419-403e-8fe2-b07a21b2bdcc)
+2025-02-09T14:29:59Z   [Information]   Event received!
+2025-02-09T14:29:59Z   [Information]   {
+  "topic": "/subscriptions/19575704-3a7b-4581-a38f-a6ac911b0b67/resourceGroups/az-learn-anower/providers/Microsoft.Storage/storageAccounts/samapan",
+  "subject": "/blobServices/default/containers/files/blobs/475103523_1158398602324441_5170344814017970935_n.jpg",
+  "eventType": "Microsoft.Storage.BlobCreated",
+  "id": "0a38ab70-501e-0052-4fff-7ac7fc06c2ae",
+  "data": {
+    "api": "PutBlob",
+    "clientRequestId": "a2fc52f9-716c-4ea1-88ff-0e4016ceb03a",
+    "requestId": "0a38ab70-501e-0052-4fff-7ac7fc000000",
+    "eTag": "0x8DD49163A837EDA",
+    "contentType": "image/jpeg",
+    "contentLength": 1175779,
+    "blobType": "BlockBlob",
+    "accessTier": "Default",
+    "url": "https://samapan.blob.core.windows.net/files/475103523_1158398602324441_5170344814017970935_n.jpg",
+    "sequencer": "0000000000000000000000000001DEB300000000003541a9",
+    "storageDiagnostics": {
+      "batchId": "c14d63d1-b006-0028-00ff-7adabc000000"
+    }
+  },
+  "dataVersion": "",
+  "metadataVersion": "1",
+  "eventTime": "2025-02-09T14:29:57.6282842Z"
+}
